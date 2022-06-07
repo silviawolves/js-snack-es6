@@ -1,7 +1,26 @@
 'use strict'
 
+let students = [
+    { name: 'Marco', id: 213, grades: 78 },
+    { name: 'Paola', id: 110, grades: 96 },
+    { name: 'Andrea', id: 250, grades: 48 },
+    { name: 'Gaia', id: 145, grades: 74 },
+    { name: 'Luigi', id: 196, grades: 68 },
+    { name: 'Piero', id: 102, grades: 50 },
+    { name: 'Francesca', id: 120, grades: 84 },
+    ];
 
+//creo un array per le tarche maiuscole
+const arrayMaiuscolo = []
 
+//ciclo nell'array di oggetti per estrarre il nome e convertirlo in maiuscole,
+//poi lo pusho nel nuovo array
+students.forEach((element, i) => {
+    const {name} = element
+    const nomiMaiuscoli = name.toUpperCase()
+    arrayMaiuscolo.push(nomiMaiuscoli)
+})
+console.log(arrayMaiuscolo)
 
 
 /*
