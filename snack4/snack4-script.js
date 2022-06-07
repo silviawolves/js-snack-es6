@@ -22,11 +22,19 @@ students.forEach((element, i) => {
 })
 console.log(arrayMaiuscolo)
 
+//filtro l'array per estrarre solo chi ha un voto superiore a 70
 const arraySettanta = students.filter((element) => {
     const {grades} = element
     return grades > 70
 })
 console.table(arraySettanta)
+
+//filtro l'array per estrarre solo chi ha un voto superiore a 70 e id superiore a 120
+const arrayStudentiTop = students.filter((element) => {
+    const {id, grades} = element
+    return grades > 70 && id > 120
+})
+console.table(arrayStudentiTop)
 
 /*
 Dato un elenco degli studenti di una facoltà, con il totale dei loro voti
