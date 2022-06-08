@@ -15,10 +15,10 @@ const arrayMaiuscolo = []
 
 //ciclo nell'array di oggetti per estrarre il nome e convertirlo in maiuscole,
 //poi lo pusho nel nuovo array
-students.forEach((element, i) => {
-    const {name} = element
-    const nomiMaiuscoli = name.toUpperCase()
-    arrayMaiuscolo.push(nomiMaiuscoli)
+students.forEach((element) => {
+    //const {name} = element
+    //const nomiMaiuscoli = name.toUpperCase()
+    arrayMaiuscolo.push(element.name.toUpperCase())
 })
 console.log(arrayMaiuscolo)
 
